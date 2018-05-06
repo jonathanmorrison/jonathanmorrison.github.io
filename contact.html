@@ -28,7 +28,7 @@
 </head>
 <body>
     <header>
-        <img src="img/donutdelightslogo.png" id="logo_sm" width="330" height="180" alt="donut delights logo"><a href="index.html"></a>
+        <a href="index.html"><img src="img/donutdelightslogo.png" id="logo_sm" width="330" height="180" alt="donut delights logo"></a>
         <img src="img/donutdelightsFront_1366x250.png" id="banner" alt="deonut delights storefront at street level">
         <nav id="nav_menu">
             <ul>
@@ -56,25 +56,58 @@
         </section>
     </header>
     <aside id="nav_page">   
-        <img src="img/nav_donut_contact.png" width="120" height="120" alt=""><a href="contact.html" class="nav_page_contact">CONTACT</a>
+        <img src="img/nav_donut_contact.png" width="120" height="120" alt=""><p class="nav_page_contact">CONTACT</p>
         <article class="hours">
             <h3>Hours: Daily<br>5 am - 2 pm</h3>
         </article>
     </aside>
     <main>
         <section class="address">
-            <h3>Get sprinkles!</h3>
-            <p>Sign up to get coupons and info Subscribe to our newsletter for the latest on our seasonal offerings and special events.</p>
+            <h1>Get <em>Sprinkles!</em></h1>
+            <p><b><em>Sprinkles!</em></b> is our newsletter for the latest on our seasonal offerings, special events, and even how you can receive a special treat during your birthday month. After all, how can you celebrate your <b><em>awesomeness</em></b> on just one day?</p>
             <img src="img/file0001178253192.jpg" width="225" height="150" alt="donut with sprinkles">
             <h3>CALL: <a href="tel:217-555-1234">217-555-1234</a></h3>
             <h3>EMAIL: <a href="mailto:contact@donutdelights.com">contact@donutdelights.com</a></h3>
         </section>
     </main>
-    <aside>
-        <h1 class="form_contact">CONTACT FORM GOES HERE</h1>
-        <h2>Name<br>email<br>Birthday<br>Phone (optional)</h2> 
-    </aside>
+        <form name="form_contact" action="https://formspree.io/jmorrison35@stu.parkland.edu" method="post" id="form_contact">
+            <fieldset>
+                <h2>Please enter your information to subscribe to  our newsletter <em>Sprinkles!</em></h2>
+                <label for="email">E-Mail:</label>
+                <input type="email" name="email" id="email" autofocus required><br>
+                <label for="first_name">First Name:</label>
+                <input type="text" name="first_name" id="first_name" required><br>
+                <label for="last_name">Last Name:</label>
+                <input type="text" name="last_name" id="last_name" required><br>
+                <label for="bday_month">Birthday Month:</label>
+                <select name="bday_month" id="bday_month">
+                    <option value="0">Select Month</option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+                <p><input type="submit" name="submit" value="Subscribe"></p>
+            </fieldset>
+        </form>
     <footer>
         <p>&copy;Donut Delights | 2112 Main Street | Urbana, Illinois 61801 | <a href="tel:217-555-1234">217-555-1234</a> | <a href="mailto:contact@donutdelights.com">contact@donutdelights.com</a></p>
     </footer>
 </body>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118761321-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-118761321-1');
+</script>
